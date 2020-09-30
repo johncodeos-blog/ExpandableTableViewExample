@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableviewcellid" rowHeight="88" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="ExpandableTableViewExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXn-w8-rTy" customClass="PaddingLabel" customModule="ExpandableTableViewExample" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                        <color key="backgroundColor" red="0.73725490196078436" green="0.12941176470588234" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="8yg-Ly-hg7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Lorem Ipsum" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnX-DS-9AX" customClass="PaddingLabel" customModule="ExpandableTableViewExample" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="45" width="320" height="44"/>
+                        <color key="backgroundColor" red="0.61960784313725492" green="0.10980392156862745" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="i2d-zk-Znh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HXn-w8-rTy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="17A-ng-dMk"/>
+                    <constraint firstAttribute="bottom" secondItem="MnX-DS-9AX" secondAttribute="bottom" id="1g1-vM-fdK"/>
+                    <constraint firstItem="MnX-DS-9AX" firstAttribute="top" secondItem="HXn-w8-rTy" secondAttribute="bottom" priority="999" id="DqG-oV-bX5"/>
+                    <constraint firstItem="HXn-w8-rTy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Hmz-it-yXF"/>
+                    <constraint firstItem="MnX-DS-9AX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QaZ-ba-Sig"/>
+                    <constraint firstAttribute="trailing" secondItem="MnX-DS-9AX" secondAttribute="trailing" id="WPW-QL-lAD"/>
+                    <constraint firstAttribute="trailing" secondItem="HXn-w8-rTy" secondAttribute="trailing" id="tMb-pi-Q9g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.73725490199999999" green="0.1333333333" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="answerLabel" destination="MnX-DS-9AX" id="tUe-cc-saG"/>
+                <outlet property="answerLabelHeight" destination="i2d-zk-Znh" id="f7M-NT-FdL"/>
+                <outlet property="questionLabel" destination="HXn-w8-rTy" id="u4A-ne-2Po"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="105.46875"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="HXn-w8-rTy">
+            <size key="intrinsicContentSize" width="99" height="20.5"/>
+        </designable>
+        <designable name="MnX-DS-9AX">
+            <size key="intrinsicContentSize" width="99" height="20.5"/>
+        </designable>
+    </designables>
+</document>
